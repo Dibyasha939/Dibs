@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+
+
+
+<p id="demo">Hey there!</p>
+
+<script>
+window.onload=function() {
+
+  var txt;
+ 
+  if (confirm("Will you dress up in sexy clothes,get me flowers and take me on a date?")) {
+    txt = "Good! Now be a man of your word and keep your promise";
+    document.getElementById("demo").innerHTML = txt;
+  } else {
+  while (!confirm("Will you dress up in sexy clothes,get me flowers and take me on a date?")){
+    confirm("Will you dress up in sexy clothes,get me flowers and take me on a date?");
+    txt="Good! Now be a man of your word and keep your promise";
+    document.getElementById("demo").innerHTML = txt;
+    }
+  };
+  
+}
+</script>
+
+</body>
+</html>
